@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:background="@drawable/img"
+        android:orientation="horizontal"
+        android:padding="19dp">
+
+        <ImageView
+            android:id="@+id/item_cart_image"
+            android:layout_width="115dp"
+            android:layout_height="119dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_cart_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Product Title"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/item_cart_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="LKR : 1900.00"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/item_cart_btn_plus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:textColor="@color/color_red"
+                android:textStyle=""
+                android:text="+"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/item_cart_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="1"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/item_cart_btn_minus"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+android:textColor="@color/color_red"
+                android:text="-"
+                android:textSize="29sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/item_cart_remove"
+                android:layout_width="20dp"
+                android:layout_height="109dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/delete_24px" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

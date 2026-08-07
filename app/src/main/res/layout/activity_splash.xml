@@ -1,0 +1,110 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/splash_root" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#0D47A1">
+
+
+    <View android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:alpha="0.08"
+        android:background="@drawable/splash_circle"
+
+        android:layout_marginTop="-80dp"/>
+    <View android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center"
+        android:alpha="0.10"
+        android:background="@drawable/splash_circle"
+        android:layout_marginTop="-80dp"/>
+
+
+    <View android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_gravity="bottom"
+        android:background="#1565C0"
+        android:alpha="0.5"/>
+
+    <LinearLayout android:id="@+id/splash_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-60dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:alpha="0">
+
+
+        <FrameLayout android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginBottom="28dp">
+
+
+            <View android:id="@+id/splash_glow_ring"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/splash_glow_ring"
+                android:alpha="0.4"/>
+
+
+
+            <View android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:background="@drawable/splash_logo_bg"/>
+
+
+            <ImageView android:id="@+id/splashLogo"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:background="@drawable/app_logo"/>
+        </FrameLayout>
+
+        <TextView android:id="@+id/splash_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QuickBite"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:letterSpacing="0.05"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Delivery App"
+            android:textSize="14sp"
+            android:textColor="#B3E5FC"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="0dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout android:id="@+id/splash_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingBottom="52dp"
+        android:alpha="0">
+
+        <ProgressBar
+            android:id="@+id/splashProgressBar" style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="160dp" android:layout_height="4dp"
+            android:indeterminate="true"
+            android:visibility="invisible" android:progressTint="#64B5F6"
+            android:indeterminateTint="#64B5F6" android:layout_marginBottom="16dp"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_version"
+            android:textColor="#80BBDEFB"
+            android:textSize="11sp"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_copy"
+            android:textColor="#80BBDEFB"
+            android:textSize="11sp"/>
+    </LinearLayout>
+</FrameLayout>

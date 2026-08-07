@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/bg_home_gradient.xml -->
+<!-- Soft blue-to-white gradient background, inspired by the pastel blue blob reference -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base: very light blue-white gradient top to bottom -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="160"
+                android:startColor="#EFF6FF"
+                android:centerColor="#DBEAFE"
+                android:endColor="#F0F9FF" />
+        </shape>
+    </item>
+
+</layer-list>
